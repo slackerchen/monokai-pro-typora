@@ -1,33 +1,43 @@
-# 安裝 Monokai Pro (CE) for Typora
+# Installation
 
-## 安裝
+## Install
 
-1. 下載本專案的 [`monokai-pro.css`](monokai-pro.css)。如果從 GitHub 檔案頁下載，請使用 **Download raw file**，避免將網頁存成 CSS。
-2. 開啟 Typora 的 **偏好設定／設定 → 外觀 → 開啟主題資料夾**。
-3. 將 CSS 檔案放入主題資料夾，不需要複製整個專案。
-4. 重新啟動 Typora。
-5. 在 **Themes／主題 → Monokai Pro** 選用。
+1. Open [monokai-pro.css](monokai-pro.css) and choose **Download raw file** on GitHub. Save the CSS file, not the GitHub page.
+2. In Typora, open **Settings / Preferences → Appearance → Open Theme Folder**.
+3. Place `monokai-pro.css` in that folder.
+4. Restart Typora and select **Themes → Monokai Pro**.
 
-選單名稱來自 `monokai-pro.css` 的檔名。專案完整名稱為 **Monokai Pro (CE) for Typora**。
+The menu label comes from the filename. The full project name is **Monokai Pro (CE) for Typora**.
 
-## 查看效果
+Open the [Markdown specimen](monokai-pro-specimen.md) to check the result. Math, diagrams, and extended Markdown features depend on your Typora version and Markdown settings.
 
-使用 Typora 開啟 [`monokai-pro-specimen.md`](monokai-pro-specimen.md)。數學公式、圖表與部分擴充語法的呈現，取決於 Typora 的版本及 Markdown 偏好設定。
+## Customize
 
-## 更新
+Create `monokai-pro.user.css` in the same theme folder to keep personal changes separate from updates:
 
-備份自行修改的 CSS，然後以新版 `monokai-pro.css` 取代主題資料夾中的同名檔案。重新啟動 Typora 以確保載入新版本。
+```css
+:root {
+    --mp-page-width: 960px;
+    --mp-code-font: "JetBrains Mono", Menlo, Consolas, monospace;
+}
 
-建議將個人調整放在 `monokai-pro.user.css`，以便更新時保留。
+html { font-size: 17px; }
+```
 
-## PDF 與列印
+Install any custom fonts yourself. Typora's font preferences may override theme defaults.
 
-若 PDF 外觀與編輯器不同，檢查 **偏好設定 → 匯出 → PDF → 主題** 是否指定了另一套主題。選擇目前主題或 Monokai Pro，才能使用本主題的列印 CSS。
+## Update
 
-白底列印規則已進行樣式檢查；原生 PDF 分頁尚未完成驗證，匯出後請檢查長程式碼、表格和圖表。
+Back up any changes made directly to the theme, replace `monokai-pro.css` with the new version, and restart Typora. Keep your `monokai-pro.user.css` file.
 
-## 移除
+## PDF and printing
 
-先切換至其他主題，再移除主題資料夾中的 `monokai-pro.css`。如有建立 `monokai-pro.user.css`，可一併移除或自行保留。重新啟動 Typora 更新主題選單。
+If a PDF looks different from the editor, check **Settings / Preferences → Export → PDF → Theme**. Select the current theme or **Monokai Pro** to use this theme's print stylesheet.
 
-官方參考：[Typora — About Themes](https://support.typora.io/About-Themes/)。
+The print stylesheet uses a light background. Native PDF pagination has not been verified; check long code blocks, tables, and diagrams after export.
+
+## Uninstall
+
+Switch to another theme, remove `monokai-pro.css` from the theme folder, and restart Typora. Remove or keep `monokai-pro.user.css` as needed.
+
+Reference: [Typora — About Themes](https://support.typora.io/About-Themes/).
