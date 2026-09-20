@@ -1,15 +1,8 @@
 # Monokai Pro (CE) for Typora
 
-An independently maintained Community Edition theme for [Typora](https://typora.io/), inspired by the default [Monokai Pro](https://monokai.pro/) palette. Warm charcoal backgrounds, soft text, and six accent colors.
+A community theme for [Typora](https://typora.io/) using the default [Monokai Pro](https://monokai.pro/) palette.
 
-## Features
-
-- One CSS file, with no external fonts, scripts, or downloads required at runtime.
-- Readable typography, responsive spacing, and system font fallbacks.
-- Consistent colors for code, source mode, the sidebar, tables, and alerts.
-- Math and Mermaid support, plus a light print stylesheet.
-
-Open the [Markdown specimen](monokai-pro-specimen.md) in Typora to explore the theme.
+One CSS file. No external dependencies.
 
 ## Quick start
 
@@ -17,8 +10,8 @@ Open the [Markdown specimen](monokai-pro-specimen.md) in Typora to explore the t
 2. Copy it into **Settings / Preferences → Appearance → Open Theme Folder**.
 3. Restart Typora and select **Themes → Monokai Pro**.
 
-See [Installation](INSTALL.md) for customization, updates, export settings, and removal.
+[Installation guide](INSTALL.md) · [Markdown specimen](monokai-pro-specimen.md)
 
 ## License
 
-[MIT](LICENSE.md). See [NOTICE](NOTICE.md) for attribution and Community Edition publishing rules. This project is independently maintained and is not an official Monokai product.
+[MIT](LICENSE.md) · [Attribution and CE publishing rules](NOTICE.md)
