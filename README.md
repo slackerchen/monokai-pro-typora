@@ -10,8 +10,8 @@ One CSS file. No external dependencies.
 2. Copy it into **Settings / Preferences → Appearance → Open Theme Folder**.
 3. Restart Typora and select **Themes → Monokai Pro**.
 
-[Installation guide](INSTALL.md) · [Markdown specimen](monokai-pro-specimen.md)
+[Markdown specimen](monokai-pro-specimen.md)
 
 ## License
 
-[MIT](LICENSE.md) · [Attribution and CE publishing rules](NOTICE.md)
+[MIT](LICENSE.md). This is an independently authored, unofficial theme using the default Monokai Pro palette. It follows the [Community Edition publishing rules](https://monokai.pro/contribute), including free non-commercial distribution and permission for Monokai to take over the package.
