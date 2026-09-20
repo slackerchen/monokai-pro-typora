@@ -7,7 +7,7 @@
 3. Place `monokai-pro.css` in that folder.
 4. Restart Typora and select **Themes → Monokai Pro**.
 
-The menu label comes from the filename. The full project name is **Monokai Pro (CE) for Typora**.
+Typora derives the menu label **Monokai Pro** from `monokai-pro.css`. The full project name is **Monokai Pro (CE) for Typora**.
 
 Open the [Markdown specimen](monokai-pro-specimen.md) to check the result. Math, diagrams, and extended Markdown features depend on your Typora version and Markdown settings.
 
@@ -34,7 +34,7 @@ Back up any changes made directly to the theme, replace `monokai-pro.css` with t
 
 If a PDF looks different from the editor, check **Settings / Preferences → Export → PDF → Theme**. Select the current theme or **Monokai Pro** to use this theme's print stylesheet.
 
-The print stylesheet uses a light background. Native PDF pagination has not been verified; check long code blocks, tables, and diagrams after export.
+The print stylesheet uses a light background; Mermaid diagrams retain a dark panel so their labels stay readable. The specimen was exported and visually checked in Typora 1.14.10 on macOS. Long code blocks can continue on the next page. Check your own long tables, formulas, and diagrams after export.
 
 ## Uninstall
 

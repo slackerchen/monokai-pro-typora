@@ -495,6 +495,11 @@ div.code-tooltip-content, .md-hover-tip .md-hover-tip-inner {
 .typora-export #write { margin: 0 auto; }
 
 /* 07 · Paper: white background, readable syntax, no clipped long fences. */
+/* Typora's native PDF renderer reads the canvas before applying print media. */
+html:has(body.typora-print), body.typora-print {
+    background: #fff;
+    color-scheme: light;
+}
 @media print {
     :root {
         color-scheme: light;
