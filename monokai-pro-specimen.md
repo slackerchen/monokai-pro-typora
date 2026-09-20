@@ -1,8 +1,8 @@
 # Monokai Pro (CE) for Typora
 
-Make room for ideas taking shape.
+A practical preview of typography, syntax colors, and Markdown elements.
 
-An independently maintained Community Edition for Typora, inspired by Monokai Pro. Warm charcoal, considered contrast, and a little color exactly where you need it.
+An independently maintained Community Edition for Typora, using the default Monokai Pro palette.
 
 ## 01 — Reading and writing
 
@@ -197,4 +197,25 @@ Another long line checks that indentation and cursor positioning remain intact w
 
 ---
 
-Keep your tools quiet. Let your ideas speak.
+## 07 — Mixed text and wide content
+
+繁體中文與 English 混排：記錄研究筆記、API 設計與程式碼。標點符號（括號）、123.45、**粗體重點**與 `inline_code` 應清楚可辨，換行時也不應互相重疊。
+
+同一段文字包含全形標點：「測試完成」，以及半形符號 (ready)、a/b、x = 42。縮小視窗後，檢查中文換行、段落邊界和文字選取。
+
+| Case | Operating system | Editor | Source mode | Input sample | Expected result | Export check | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Mixed text | macOS / Windows / Linux | Paragraph and selection | Markdown delimiters | 繁體中文 + English + 123.45 | Readable glyphs and wrapping | No missing characters | Verify locally |
+| Long content | Narrow and wide windows | Table and code fence | Long source lines | `long_identifier_with_underscores_0123456789` | Content remains reachable | No clipped columns | Verify locally |
+
+$$
+\text{A long expression: } S = a_1 + a_2 + a_3 + a_4 + a_5 + a_6 + a_7 + a_8 + a_9 + a_{10} + a_{11} + a_{12} + a_{13} + a_{14} + a_{15} + a_{16}
+$$
+
+### Manual checks
+
+- Resize the window; inspect the wide table, long formula, and code lines.
+- Edit a fenced code block: insert a tab, select text, and move the caret through a long line.
+- Switch to source mode; check syntax colors, selection, and the caret.
+- Open the outline and search for `Notebook`; check selected and inactive states.
+- Export to PDF with this theme; inspect page breaks, all table columns, code line endings, and diagram labels.
