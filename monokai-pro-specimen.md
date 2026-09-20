@@ -124,8 +124,8 @@ Press <kbd>⌘</kbd> + <kbd>F</kbd> on macOS to find text, or use the View menu 
 Inline math $e^{i\pi}+1=0$ shares the surrounding text color.
 
 $$
-\operatorname{Attention}(Q,K,V)
-=\operatorname{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\right)V
+\mathrm{Attention}(Q,K,V)
+=\mathrm{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\right)V
 $$
 
 ```mermaid
