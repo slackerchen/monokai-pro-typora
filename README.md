@@ -19,12 +19,6 @@ Open the [Markdown specimen](monokai-pro-specimen.md) in Typora to explore the t
 
 See [Installation](INSTALL.md) for customization, updates, export settings, and removal.
 
-## Compatibility
-
-Previously tested with **Typora 1.14.10 on macOS** (September 13, 2026). Windows and Linux have not been tested. Native PDF pagination remains unverified; review exported documents before sharing them.
-
-Syntax highlighting depends on Typora's language modes. Mermaid uses Typora's dark rendering and preserves explicitly assigned diagram colors.
-
 ## License
 
 [MIT](LICENSE.md). See [NOTICE](NOTICE.md) for attribution and Community Edition publishing rules. This project is independently maintained and is not an official Monokai product.
