@@ -1,10 +1,4 @@
-# Local reference themes and legacy implementations (not release sources).
-/monokai.css
-/light-monokai.css
-
 # Local development notes and generated exports. Exported HTML includes
-# third-party styles/assets whose redistribution notices need separate review.
-/MONOKAI-PRO.md
 *.html
 *.pdf
 /tmp/
