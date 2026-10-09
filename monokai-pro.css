@@ -254,7 +254,7 @@ body {
     color: var(--mp-fg);
     font-weight: 650;
 }
-#write tbody tr:nth-child(even) { background: var(--mp-hover); }
+#write tbody tr:nth-child(even),
 #write tbody tr:hover { background: var(--mp-hover); }
 
 #write img { max-width: 100%; height: auto; }
@@ -353,7 +353,7 @@ body {
 .cm-s-typora-default .cm-def, .cm-s-typora-default .cm-attribute { color: var(--mp-green); }
 .cm-s-typora-default .cm-variable-2 { color: var(--mp-orange); }
 .cm-s-typora-default .cm-variable-3, .cm-s-typora-default .cm-type { color: var(--mp-cyan); }
-.cm-s-typora-default .cm-meta, .cm-s-typora-default .cm-hr { color: var(--mp-muted); }
+.cm-s-typora-default .cm-meta, .cm-s-typora-default .cm-hr,
 .cm-s-typora-default .cm-formatting { color: var(--mp-muted); }
 .cm-s-typora-default .cm-quote { color: var(--mp-secondary); }
 
@@ -405,17 +405,15 @@ body {
 ::selection { background: var(--mp-selection); color: var(--mp-fg); }
 
 /* 05 · Sidebar and controls. Avoid layout overrides to native app chrome. */
-#typora-sidebar { background: var(--mp-surface); color: var(--mp-secondary); }
+#typora-sidebar { color: var(--mp-secondary); }
 .sidebar-tabs { border-bottom: 1px solid var(--mp-border); }
 .sidebar-tab { color: var(--mp-muted); }
 .sidebar-tab.active, .sidebar-tab:hover { color: var(--mp-yellow); }
-.file-node-content, .file-list-item, .outline-item { color: var(--mp-secondary); }
+.file-list-item, .outline-item { color: var(--mp-secondary); }
 .file-node-content:hover, .file-list-item:hover, .outline-item:hover {
     background: var(--mp-hover);
-    color: var(--mp-fg);
 }
-.file-tree-node.active > .file-node-background { background: var(--mp-border); }
-.file-tree-node.active > .file-node-content,
+.file-list-item:hover, .outline-item:hover { color: var(--mp-fg); }
 .file-list-item.active, .file-list-item.active .file-list-item-file-name {
     color: var(--mp-yellow);
 }
