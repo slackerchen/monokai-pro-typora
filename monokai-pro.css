@@ -321,13 +321,12 @@ body {
 .cm-s-inner .cm-number, .cm-s-inner .cm-atom { color: var(--mp-purple); }
 .cm-s-inner .cm-type, .cm-s-inner .cm-variable-3 { color: var(--mp-cyan); font-style: italic; }
 .cm-s-inner .cm-variable, .cm-s-inner .cm-property { color: var(--mp-fg); }
-.cm-s-inner .cm-variable-2 { color: var(--mp-orange); }
-.cm-s-inner .cm-bracket, .cm-s-inner .cm-punctuation { color: var(--mp-secondary); }
-.cm-s-inner .cm-meta { color: var(--mp-orange); }
+.cm-s-inner .cm-variable-2, .cm-s-inner .cm-meta { color: var(--mp-orange); }
+.cm-s-inner .cm-bracket, .cm-s-inner .cm-punctuation,
+.cm-s-inner .cm-quote { color: var(--mp-secondary); }
 .cm-s-inner .cm-header { color: var(--mp-red); font-weight: 600; }
 .cm-s-inner .cm-link { color: var(--mp-cyan); }
 .cm-s-inner .cm-hr { color: var(--mp-muted); }
-.cm-s-inner .cm-quote { color: var(--mp-secondary); }
 .cm-s-inner .cm-positive { color: var(--mp-green); }
 .cm-s-inner .cm-negative { color: var(--mp-red); }
 .cm-s-inner .cm-error { color: var(--mp-red); text-decoration: underline wavy; }
@@ -493,6 +492,7 @@ div.code-tooltip-content, .md-hover-tip .md-hover-tip-inner {
 /* 07 · Paper: white background, readable syntax, no clipped long fences. */
 /* Typora's native PDF renderer reads the canvas before applying print media. */
 html:has(body.typora-print), body.typora-print {
+    --bg-color: #fff;
     background: #fff;
     color-scheme: light;
 }
